@@ -24,6 +24,8 @@ final class TestToDoManagerTests: XCTestCase {
     }
     
     
+    
+    
     //    addTask(_ task: Task): Проверьте, что метод корректно добавляет задачу в список задач и что список задач действительно увеличивается на 1 после добавления. Проверьте также, что добавленная задача присутствует в списке и имеет правильные значения свойств.
     func testAddTask() throws {
         let task = Task(id: 1, title: "Task 1", description: "Description 1", dueDate: nil, isCompleted: false)
@@ -69,6 +71,7 @@ final class TestToDoManagerTests: XCTestCase {
         
         let task1 = Task(id: 1, title: "Task 1", description: "Description 1", dueDate: nil, isCompleted: false)
         let task2 = Task(id: 2, title: "Task 2", description: "Description 2", dueDate: nil, isCompleted: false)
+        
         toDoManager.addTask(task1)
         toDoManager.addTask(task2)
         
