@@ -8,7 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    private var collectionView: UICollectionView = {
+           let collectionView = UICollectionView(frame: .zero, collectionViewLayout: .init())
+           collectionView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+           return collectionView
+       }()
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         
